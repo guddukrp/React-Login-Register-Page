@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color:white;
+}
+.nav{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}

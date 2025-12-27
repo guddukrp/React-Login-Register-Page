@@ -1,0 +1,66 @@
+//   let name: string="Karan";
+  // let age:number;
+  // let isStudent:boolean;
+  // let hobbies:string[];
+  let city : any;
+  let state :unknown;
+  // let role:[number,string];
+  // role=[2,"deepak"];
+
+  // let person:Object;
+
+  type Person ={      //
+    name :string;
+    age?:number;        
+  }
+
+  type Human = Person & {
+    gender:string;
+  }
+
+  let y:Human={
+    name:"guddu",
+    gender:"male",    // necessary to give all fields in type
+  }
+
+
+  interface Person1{    // 
+    name:string,
+    age?:number
+  }
+
+  interface Guy extends Person1{    //interface can extend type
+    profession:string;  
+  }
+
+  // let person:Person={
+  //   name :"deepak",
+  // };
+
+  let lotsOfPeople:Person[];
+
+  let age :number|string;
+
+  function printName(name:string){
+    console.log(name);
+  }
+  printName("deepak");
+
+  // let printAge:Function;
+
+  // let printAge: (name:number)=>void;   //return undefine
+
+  // let printState:(age:number)=>never;  //return nothing
+
+
+
+
+
+
+  
+
+
+
+
+
+
